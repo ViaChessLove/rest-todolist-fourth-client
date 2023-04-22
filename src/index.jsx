@@ -4,11 +4,10 @@ import TodoApp from './containers/TodoApp';
 
 window.addEventListener('DOMContentLoaded', () => {
   const app = document.querySelector('#app');
-  
 
   ReactDOM
     .createRoot(app)
     .render(
-      <TodoApp />
+      <TodoApp />,
     );
 });

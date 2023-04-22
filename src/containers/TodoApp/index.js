@@ -1,4 +1,5 @@
+import withResetCss from '@hocs/withResetCss';
+
 import { TodoApp } from './TodoApp';
 
-
-export default TodoApp;
+export default withResetCss(TodoApp);
