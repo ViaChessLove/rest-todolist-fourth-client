@@ -4,6 +4,10 @@ module.exports = {
       alias: {
         map: [
           ['@hocs', './src/hocs'],
+          ['@contexts', './src/contexts'],
+          ['@utils', './src/utils'],
+          ['@hooks', './src/hooks'],
+          ['@components', './src/components']
         ],
         extensions: ['.js', '.jsx'],
       },

@@ -14,12 +14,15 @@ module.exports = {
     port: 3002,
     allowedHosts: 'all',
     hot: true,
-    open: true,
     liveReload: true,
   },
   resolve: {
     alias: {
       '@hocs': path.resolve(__dirname, 'src/hocs'),
+      '@contexts': path.resolve(__dirname, 'src/contexts'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
+      '@hooks': path.resolve(__dirname, 'src/hooks'),
+      '@components': path.resolve(__dirname, 'src/components'),
     },
     extensions: ['.js', '.jsx'],
   },
