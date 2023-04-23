@@ -9,25 +9,31 @@
   "author": "vyacheslav",
   "license": "ISC",
   "dependencies": {
-    "eslint-import-resolver-alias": "^1.1.2",
-    "html-webpack-plugin": "^5.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^5.3.9",
-    "sucrase": "^3.32.0"
+    "eslint-import-resolver-alias": "1.1.2",
+    "html-webpack-plugin": "5.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "5.3.9",
+    "sucrase": "3.32.0"
   },
   "devDependencies": {
-    "@sucrase/webpack-loader": "^2.0.0",
-    "eslint": "^8.39.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-react": "^1.1.7",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "webpack": "^5.79.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.13.3"
+    "@sucrase/webpack-loader": "2.0.0",
+    "eslint": "8.39.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-react": "1.1.7",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "husky": "8.0.3",
+    "webpack": "5.79.0",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.13.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "CI=true npm test",
+    }
   }
 }
